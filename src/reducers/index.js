@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 const songsReducer = () => {
   return [
-    { title: "Love song", duration: "4.05" },
+    { title: "Love Song", duration: "4.05" },
     { title: "I'm yours", duration: "3.15" },
     { title: "Lucky", duration: "4.13" },
     { title: "When I see an elephant fly", duration: "3.72" }
