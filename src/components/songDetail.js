@@ -6,25 +6,29 @@ const SongDetail = ({ song }) => {
     return <div>Select the song</div>;
   }
   return (
-    <div className="ui card">
-      <div className="image">
-        <img src="http://2.bp.blogspot.com/-9fOoJjRGbqs/VQGMWeiF2dI/AAAAAAAARMo/mhuh6BYzCJQ/s1600/DumboFlying1.jpeg" />
-      </div>
-      <div className="content">
-        <a className="header">Details for:</a>
-        <div className="meta">
-          <span className="date">Singer:</span>
+    <div>
+      <div className="ui card">
+        <div className="image">
+          <img src={song.cover} />
         </div>
-        <div className="description">Title:{song.title}</div>
+        <div className="content">
+          <div className="meta">
+            <span className="date">Artist: {song.artist}</span>
+          </div>
+          <div className="description">Title: {song.title}</div>
 
-        <div className="description">Duration:{song.duration}</div>
-      </div>
+          <div className="description">Duration: {song.duration}</div>
+        </div>
 
-      <div className="extra content">
-        <a>
-          <i className="user icon"></i>
-          22 Likes
-        </a>
+        <div className="extra content">
+          <a>
+            <i
+              className="heart outline like icon"
+              style={{ color: "#AD9661" }}
+            ></i>
+            {song.like}
+          </a>
+        </div>
       </div>
     </div>
   );

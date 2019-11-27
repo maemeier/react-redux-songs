@@ -9,7 +9,8 @@ class SongList extends React.Component {
         <div className="item" key={song.title}>
           <div className="right floated content">
             <button
-              className="ui button olive"
+              className="ui button"
+              style={{ color: "white", background: "#AD9661" }}
               onClick={() => this.props.selectSong(song)}
             >
               Select
